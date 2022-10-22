@@ -1,0 +1,10 @@
+{
+  "name": "hydra-p5",
+  "version": "0.1.0",
+  "description": "A nicer P5 intergration for Hydra",
+  "main": "index.js",
+  "repository": "https://github.com/munshkr/hydra-p5",
+  "author": "Damián Silvani <munshkr@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "private": false
+}
