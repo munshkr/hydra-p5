@@ -5,7 +5,7 @@ A simpler P5 intergration for Hydra
 ## Usage
 
 ```javascript
-await loadScript("http://unpkg.com/hydra-p5@latest")
+await loadScript("https://unpkg.com/hydra-p5")
 
 p5src(s0)
   .draw((p) => {
