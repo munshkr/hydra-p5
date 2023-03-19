@@ -31,7 +31,7 @@ function p5src(source, mode = "P2D") {
   }
 
   // If p5 instance does not exist, initialize once
-  if (!_p5BySources[source]) {
+  if (!_p5BySources[source._p5id]) {
     const p5 = new P5({ mode });
     source._p5id = window._idCounter++;
     _p5BySources[source._p5id] = p5;
@@ -46,8 +46,8 @@ function p5src(source, mode = "P2D") {
 
   obj.setup = (callback) => {
     obj._setupError = false;
+
     p5.setup = () => {
-      console.debug("Called setup");
       try {
         callback(p5);
       } catch (err) {
